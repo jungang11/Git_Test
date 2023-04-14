@@ -28,6 +28,30 @@
             }
         }
 
+        // 게임내용 함수
+        public static void Game()
+        {
+            // 랜덤한 숫자 0 ~ 999
+            Random rand = new Random();
+            int computer = rand.Next(0, 1000);
+
+            // 유저는 10번의 기회
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine(computer);
+                Console.Write("남은 기회 : {0}, 정답 입력 : ", (10 - i));
+                int player = int.Parse(Console.ReadLine());
+
+                if (Correct(player, computer))
+                {
+                    break;
+                }
+                else
+                {
+                    continue;
+                }
+            }
+        }
 
 
 
