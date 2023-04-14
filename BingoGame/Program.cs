@@ -9,6 +9,55 @@
 
     internal class Program
     {
+        // 게임 내용 업데이트 함수
+        public static void GameUpdate(int[,] bingo, Player player)
+        {
+            int input = player.Input();
+
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    if (bingo[i, j] == input)
+                    {
+                        bingo[i, j] = 50;
+                    }
+                }
+            }
+
+            int LeftCross = 0;
+            int RightCross = 0;
+
+            for (int i = 0; i < 5; i++)
+            {
+                int Row = 0;
+                int Col = 0;
+
+                for (int j = 0; j < 5; j++)
+                {
+                    if (bingo[i, j] == 50)
+                    {
+                        Row++;
+                    }
+                    else if (bingo[j, i] == 50)
+                    {
+                        Col++;
+                    }
+                    else if (i == j && bingo[i, j] == 50)
+                    {
+                        LeftCross++;
+                    }
+                    else if (i + j == 4 && bingo[i, j] == 50)
+                    {
+                        RightCross++;
+                    }
+                }
+                if (Row == 5) player.BingoCount++;
+                else if (Col == 5) player.BingoCount++;
+            }
+            if (LeftCross == 5) player.BingoCount++;
+            else if (RightCross == 5) player.BingoCount++;
+        }
 
 
         static void Main(string[] args)

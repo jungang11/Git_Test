@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace BingoGame
 {
-    internal class Player
+    public class Player
     {
+        public int BingoCount = 0;
+
+        public int Input()
+        {
+            int input = int.Parse(Console.ReadLine());
+            return input;
+        }
     }
 }
