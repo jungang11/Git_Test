@@ -1,0 +1,15 @@
+D:\Unity\Git_Test\BingoGame\bin\Debug\net6.0\BingoGame.exe
+D:\Unity\Git_Test\BingoGame\bin\Debug\net6.0\BingoGame.deps.json
+D:\Unity\Git_Test\BingoGame\bin\Debug\net6.0\BingoGame.runtimeconfig.json
+D:\Unity\Git_Test\BingoGame\bin\Debug\net6.0\BingoGame.dll
+D:\Unity\Git_Test\BingoGame\bin\Debug\net6.0\BingoGame.pdb
+D:\Unity\Git_Test\BingoGame\obj\Debug\net6.0\BingoGame.csproj.AssemblyReference.cache
+D:\Unity\Git_Test\BingoGame\obj\Debug\net6.0\BingoGame.GeneratedMSBuildEditorConfig.editorconfig
+D:\Unity\Git_Test\BingoGame\obj\Debug\net6.0\BingoGame.AssemblyInfoInputs.cache
+D:\Unity\Git_Test\BingoGame\obj\Debug\net6.0\BingoGame.AssemblyInfo.cs
+D:\Unity\Git_Test\BingoGame\obj\Debug\net6.0\BingoGame.csproj.CoreCompileInputs.cache
+D:\Unity\Git_Test\BingoGame\obj\Debug\net6.0\BingoGame.dll
+D:\Unity\Git_Test\BingoGame\obj\Debug\net6.0\refint\BingoGame.dll
+D:\Unity\Git_Test\BingoGame\obj\Debug\net6.0\BingoGame.pdb
+D:\Unity\Git_Test\BingoGame\obj\Debug\net6.0\BingoGame.genruntimeconfig.cache
+D:\Unity\Git_Test\BingoGame\obj\Debug\net6.0\ref\BingoGame.dll

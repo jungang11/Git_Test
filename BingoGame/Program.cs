@@ -28,6 +28,7 @@
             int LeftCross = 0;
             int RightCross = 0;
 
+
             for (int i = 0; i < 5; i++)
             {
                 int Row = 0;
@@ -35,28 +36,18 @@
 
                 for (int j = 0; j < 5; j++)
                 {
-                    if (bingo[i, j] == 50)
-                    {
-                        Row++;
-                    }
-                    else if (bingo[j, i] == 50)
-                    {
-                        Col++;
-                    }
-                    else if (i == j && bingo[i, j] == 50)
-                    {
-                        LeftCross++;
-                    }
-                    else if (i + j == 4 && bingo[i, j] == 50)
-                    {
-                        RightCross++;
-                    }
+                    if (bingo[i, j] == 50) Row++;
+                    if (bingo[j, i] == 50) Col++;
+                    if (i == j && bingo[i, j] == 50) LeftCross++;
+                    if (i + j == 4 && bingo[i, j] == 50) RightCross++;
                 }
                 if (Row == 5) player.BingoCount++;
-                else if (Col == 5) player.BingoCount++;
+                if (Col == 5) player.BingoCount++;
             }
             if (LeftCross == 5) player.BingoCount++;
-            else if (RightCross == 5) player.BingoCount++;
+            if (RightCross == 5) player.BingoCount++;
+
+            
         }
 
         // 게임 내용 출력 함수
@@ -89,8 +80,17 @@
             while (true)
             {
                 GameUpdate(bingo, player);
-                if (player.BingoCount >= 3) break;
-                else Rendering(bingo, player);
+
+                if (player.BingoCount >= 3)
+                {
+                    Rendering(bingo, player);
+                    break;
+                }
+                else
+                {
+                    player.BingoCount = 0;
+                    Rendering(bingo, player);
+                }
             }
         }
 

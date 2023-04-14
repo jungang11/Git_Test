@@ -10,6 +10,8 @@ namespace BingoGame
     {
         public int BingoCount = 0;
 
+        public int renderCount = 0;
+
         public int Input()
         {
             int input = int.Parse(Console.ReadLine());
