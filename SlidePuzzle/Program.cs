@@ -9,6 +9,35 @@
          * 아래 예시는 0이 움직이는 것으로 가정한다.
          */
 
+        enum KeyCode { None, UpArrow, DownArrow, LeftArrow, RightArrow }
+
+        static KeyCode GameInput()
+        {
+            KeyCode key;
+            ConsoleKeyInfo info = Console.ReadKey();
+
+            switch (info.Key)
+            {
+                case ConsoleKey.UpArrow:
+                    key = KeyCode.UpArrow;
+                    break;
+                case ConsoleKey.DownArrow:
+                    key = KeyCode.DownArrow;
+                    break;
+                case ConsoleKey.LeftArrow:
+                    key = KeyCode.LeftArrow;
+                    break;
+                case ConsoleKey.RightArrow:
+                    key = KeyCode.RightArrow;
+                    break;
+                default:
+                    key = KeyCode.None;
+                    break;
+            }
+            return key;
+        }
+
+
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");

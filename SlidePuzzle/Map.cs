@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SlidePuzzle
 {
-    internal class Map
+    public class Map
     {
         public int[,] MakeMap()
         {
