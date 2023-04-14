@@ -53,11 +53,28 @@
             Console.WriteLine("소수임");
         }
 
+        // 4. 사용자가 입력한 양의 정수의 각 자릿수의 합을 구하는 함수
+        static void SumOfDigits()
+        {
+            Console.Write("양의 정수 입력 : ");
+            int num = int.Parse(Console.ReadLine());
+
+            int result = 0;
+            string numStr = num.ToString();
+            for (int i = 0; i < numStr.Length; i++)
+            {
+                // SubString(a, b) => a번째부터 b만큼 자름
+                result += int.Parse(numStr.Substring(i, 1));
+            }
+            Console.WriteLine(result);
+        }
+
         static void Main(string[] args)
         {
             // WordStart();
             // WordCount();
-            IsPrime();
+            // IsPrime();
+            SumOfDigits();
         }
     }
 }
