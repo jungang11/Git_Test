@@ -33,10 +33,31 @@
             Console.WriteLine(result + 1);
         }
 
+        // 3. 주어진 숫자가 소수인지 판별하는 solution을 완성하라
+        // bool -> void 형으로 변환했음
+        public static void IsPrime()
+        {
+            Console.Write("숫자 입력 : ");
+            int num = int.Parse(Console.ReadLine());
+
+            // sqrt : 제곱근
+            int sqrt_num = (int)Math.Sqrt(num);
+            for(int i = 2; i < sqrt_num; i++)
+            {
+                if (num % i == 0)
+                {
+                    Console.WriteLine("소수가 아님");
+                    break;
+                }
+            }
+            Console.WriteLine("소수임");
+        }
+
         static void Main(string[] args)
         {
             // WordStart();
-            WordCount();
+            // WordCount();
+            IsPrime();
         }
     }
 }
