@@ -59,6 +59,26 @@
             else if (RightCross == 5) player.BingoCount++;
         }
 
+        // 게임 내용 출력 함수
+        public static void Rendering(int[,] bingo, Player player)
+        {
+            Console.Clear();
+            Console.WriteLine("=======빙고=======");
+            Console.WriteLine("{0}개 빙고", player.BingoCount);
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    if (bingo[i, j] == 50)
+                        Console.Write("#\t");
+                    else
+                        Console.Write("{0}\t", bingo[i, j]);
+                }
+                Console.WriteLine();
+            }
+            Console.Write("입력해라 : ");
+        }
+
 
         static void Main(string[] args)
         {
