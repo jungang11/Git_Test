@@ -11,13 +11,32 @@
             string word = Console.ReadLine();
 
             // string.indexof() : 주어진 문자열 str 앞에서부터 word가 처음 발견되는 위치의 인덱스 반환
-            int result = str.IndexOf(word);
+            int result = str.IndexOf(word); 
             Console.WriteLine(result);
+        }
+
+        // 2. 문자열을 입력받으면 단어의 갯수를 출력하기
+        public static void WordCount()
+        {
+            int result = 0;
+            Console.Write("문자열 입력 : ");
+            string str = Console.ReadLine();
+
+            for(int i=0;i<str.Length;i++)
+            {
+                if (str[i] == ' ')
+                {
+                    result++;
+                }
+            }
+            // 마지막 공백을 세주기 위해 result + 1
+            Console.WriteLine(result + 1);
         }
 
         static void Main(string[] args)
         {
-            WordStart();
+            // WordStart();
+            WordCount();
         }
     }
 }
