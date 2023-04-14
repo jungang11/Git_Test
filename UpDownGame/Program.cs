@@ -53,11 +53,22 @@
             }
         }
 
-
-
-        static void Main(string[] args)
+        // 메인 함수
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Game();
+            Console.WriteLine("1 입력시 재시작, 아무 키 입력시 종료");
+            int reGame = int.Parse(Console.ReadLine());
+            // 기회 소진시 종료인지 재시작인지 선택
+
+            if (reGame == 1)
+            {
+                Game();
+            }
+            else
+            {
+                Console.WriteLine("게임 종료");
+            }
         }
     }
 }
