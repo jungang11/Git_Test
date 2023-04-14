@@ -69,12 +69,62 @@
             Console.WriteLine(result);
         }
 
+        // 5. k개의 정렬된 배열에서 공통항목을 찾는 함수. 중복 허용 x
+        static void FindCommonItems()
+        {
+            int[] arr1 = { 1, 5, 5, 10 };
+            int[] arr2 = { 3, 4, 5, 5, 10 };
+            int[] arr3 = { 5, 5, 10, 20 };
+
+            int[] result = new int[arr1.Length];
+            int[] answer = new int[arr1.Length];
+
+            // arr1 과 arr2 중복값을 배열 result 에 저장
+            for (int i = 0; i < arr1.Length; i++)
+            {
+                for (int j = 0; j < arr2.Length; j++)
+                {
+                    if (arr1[i] == arr2[j])
+                    {
+                        result[i] = arr1[i];
+                        break;
+                    }
+                }
+            }
+
+            // result 배열과 arr3 비교, 중복값을 배열 answer 에 저장
+            for (int i = 0; i < result.Length; i++)
+            {
+                if (result[i] == 0)
+                {
+                    result[i] = result[i + 1];
+                }
+                for (int j = 0; j < arr3.Length; j++)
+                {
+                    if (result[i] == arr3[j])
+                    {
+                        answer[i] = result[i];
+                        break;
+                    }
+                }
+            }
+            // answer 배열의 중복되는 값 제거
+            answer = answer.Distinct().ToArray();
+
+            // answer 배열의 모든 값 출력
+            foreach(int i in answer)
+            {
+                Console.Write("{0} ", i);
+            }
+        }
+
         static void Main(string[] args)
         {
             // WordStart();
             // WordCount();
             // IsPrime();
-            SumOfDigits();
+            // SumOfDigits();
+            FindCommonItems();
         }
     }
 }
