@@ -79,10 +79,20 @@
             Console.Write("입력해라 : ");
         }
 
-
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Player player = new Player();
+            Map map = new Map();
+            int[,] bingo = map.MakeMap();
+            Rendering(bingo, player);
+
+            while (true)
+            {
+                GameUpdate(bingo, player);
+                if (player.BingoCount >= 3) break;
+                else Rendering(bingo, player);
+            }
         }
+
     }
 }
