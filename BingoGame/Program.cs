@@ -10,6 +10,7 @@
     internal class Program
     {
         // 게임 내용 업데이트 함수
+        // 게임을 끝내기 위한 player.BingoCount 계산
         public static void GameUpdate(int[,] bingo, Player player)
         {
             int input = player.Input();
@@ -46,8 +47,33 @@
             }
             if (LeftCross == 5) player.BingoCount++;
             if (RightCross == 5) player.BingoCount++;
+        }
+        
+        // 현재 빙고 갯수를 알기위한 count 값 반환
+        public static int CheckBingo(int[,] bingo)
+        {
+            int count = 0;
+            int LeftCross = 0;
+            int RightCross = 0;
 
-            
+            for (int i = 0; i < 5; i++)
+            {
+                int Row = 0;
+                int Col = 0;
+
+                for (int j = 0; j < 5; j++)
+                {
+                    if (bingo[i, j] == 50) Row++;
+                    if (bingo[j, i] == 50) Col++;
+                    if (i == j && bingo[i, j] == 50) LeftCross++;
+                    if (i + j == 4 && bingo[i, j] == 50) RightCross++;
+                }
+                if (Row == 5) { count++; };
+                if (Col == 5) { count++; };
+            }
+            if (LeftCross == 5) { count++; };
+            if (RightCross == 5) { count++; };
+            return count;
         }
 
         // 게임 내용 출력 함수
@@ -55,7 +81,7 @@
         {
             Console.Clear();
             Console.WriteLine("=======빙고=======");
-            Console.WriteLine("{0}개 빙고", player.BingoCount);
+            Console.WriteLine("{0}개 빙고", CheckBingo(bingo));
             for (int i = 0; i < 5; i++)
             {
                 for (int j = 0; j < 5; j++)
