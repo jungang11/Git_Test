@@ -1,0 +1,15 @@
+D:\Unity\Git_Test\bin\Debug\net6.0\Git_Test.exe
+D:\Unity\Git_Test\bin\Debug\net6.0\Git_Test.deps.json
+D:\Unity\Git_Test\bin\Debug\net6.0\Git_Test.runtimeconfig.json
+D:\Unity\Git_Test\bin\Debug\net6.0\Git_Test.dll
+D:\Unity\Git_Test\bin\Debug\net6.0\Git_Test.pdb
+D:\Unity\Git_Test\obj\Debug\net6.0\Git_Test.csproj.AssemblyReference.cache
+D:\Unity\Git_Test\obj\Debug\net6.0\Git_Test.GeneratedMSBuildEditorConfig.editorconfig
+D:\Unity\Git_Test\obj\Debug\net6.0\Git_Test.AssemblyInfoInputs.cache
+D:\Unity\Git_Test\obj\Debug\net6.0\Git_Test.AssemblyInfo.cs
+D:\Unity\Git_Test\obj\Debug\net6.0\Git_Test.csproj.CoreCompileInputs.cache
+D:\Unity\Git_Test\obj\Debug\net6.0\Git_Test.dll
+D:\Unity\Git_Test\obj\Debug\net6.0\refint\Git_Test.dll
+D:\Unity\Git_Test\obj\Debug\net6.0\Git_Test.pdb
+D:\Unity\Git_Test\obj\Debug\net6.0\Git_Test.genruntimeconfig.cache
+D:\Unity\Git_Test\obj\Debug\net6.0\ref\Git_Test.dll
