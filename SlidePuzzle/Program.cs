@@ -37,10 +37,32 @@
             return key;
         }
 
+        // 게임 내용 출력 함수
+        public static void Rendering(int[,] map)
+        {
+            Console.Clear();
+            Console.WriteLine("========================");
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    Console.Write("{0}\t", map[i, j]);
+                }
+                Console.WriteLine();
+            }
+            Console.Write("← : 왼쪽 → : 오른쪽 ↑ : 위쪽 ↓ : 아래쪽");
+        }
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Map map = new Map();
+            int[,] _map = map.MakeMap();
+            Rendering(_map);
+
+            while (true)
+            {
+                Rendering(_map);
+            }
         }
     }
 }

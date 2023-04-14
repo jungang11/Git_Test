@@ -1,0 +1,15 @@
+D:\Unity\Git_Test\SlidePuzzle\bin\Debug\net6.0\SlidePuzzle.exe
+D:\Unity\Git_Test\SlidePuzzle\bin\Debug\net6.0\SlidePuzzle.deps.json
+D:\Unity\Git_Test\SlidePuzzle\bin\Debug\net6.0\SlidePuzzle.runtimeconfig.json
+D:\Unity\Git_Test\SlidePuzzle\bin\Debug\net6.0\SlidePuzzle.dll
+D:\Unity\Git_Test\SlidePuzzle\bin\Debug\net6.0\SlidePuzzle.pdb
+D:\Unity\Git_Test\SlidePuzzle\obj\Debug\net6.0\SlidePuzzle.csproj.AssemblyReference.cache
+D:\Unity\Git_Test\SlidePuzzle\obj\Debug\net6.0\SlidePuzzle.GeneratedMSBuildEditorConfig.editorconfig
+D:\Unity\Git_Test\SlidePuzzle\obj\Debug\net6.0\SlidePuzzle.AssemblyInfoInputs.cache
+D:\Unity\Git_Test\SlidePuzzle\obj\Debug\net6.0\SlidePuzzle.AssemblyInfo.cs
+D:\Unity\Git_Test\SlidePuzzle\obj\Debug\net6.0\SlidePuzzle.csproj.CoreCompileInputs.cache
+D:\Unity\Git_Test\SlidePuzzle\obj\Debug\net6.0\SlidePuzzle.dll
+D:\Unity\Git_Test\SlidePuzzle\obj\Debug\net6.0\refint\SlidePuzzle.dll
+D:\Unity\Git_Test\SlidePuzzle\obj\Debug\net6.0\SlidePuzzle.pdb
+D:\Unity\Git_Test\SlidePuzzle\obj\Debug\net6.0\SlidePuzzle.genruntimeconfig.cache
+D:\Unity\Git_Test\SlidePuzzle\obj\Debug\net6.0\ref\SlidePuzzle.dll
